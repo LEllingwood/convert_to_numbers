@@ -10,13 +10,13 @@
 <div id="test"></div>
 
 <script type="text/javascript">
-var words = [
+let words = [
    'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',
    'ten', 'eleven', 'twelve', 'thirthteen', 'fourteen', 'fifteen'
 ];
 
 function Num2Word(N) {
- var str = '';
+ let str = '';
  if (N >= words.length) {
    if ((N > 15) && (N < 20)) { str = words[N-10]+'teen'; }
    if ((N > 19) && (N < 30)) { str = 'twenty';  if (N > 20) { str += '-'+words[N-20]; } }
@@ -31,10 +31,10 @@ function Num2Word(N) {
  return str;
 };
 
-var numbers = [ ];  for (var i=0; i<100; i++) { numbers.push(i); }
+let numbers = [ ];  for (var i=0; i<100; i++) { numbers.push(i); }
 
-var str = '';
-for (var i=0; i<numbers.length; i++) { str += numbers[i] + ' = ' + Num2Word(numbers[i]) + '<br>'; }
+let str = '';
+for (let i=0; i<numbers.length; i++) { str += numbers[i] + ' = ' + Num2Word(numbers[i]) + '<br>'; }
 document.getElementById('test').innerHTML = str;
 </script>
 
