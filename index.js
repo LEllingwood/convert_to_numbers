@@ -25,7 +25,7 @@ function numWords(num){
         return ones[numString[0]] + ' hundred ';
       
       else {
-        // debugger
+        
           // if 1-19 something (use return statement here to git it together)
            if (numString[1] === "0" || numString[1] === "1") {
              return ones[numString[0]] + ' hundred ' + ones[Number(numString[1] + numString[2])]
